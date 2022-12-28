@@ -1,16 +1,27 @@
 # Recon_mSIM
-Build mSIM image from raw data.
-The code renders multispot structured illumination microscopy images, starting from RAW data. 
-The code is composed by an ImageJ macro and some Matlab scripts and functions.
 
-Data needs to be organized in a folder* containing sub-folders** each with a raw acquisition (multi-TIF).
+Reconstruct mSIM images from sequences of images (mSIM data, in multi-page TIFF format), where a triangular lattice of diffraction limited spots scan the sample.
 
-Example:
-mSIM data #1: 'C:/ExptA/SIM_001/SIM_001.tif
-mSIM data #2: 'C:/ExptA/SIM_002/SIM_002.tif
+This code is composed by an ImageJ macro and some Matlab scripts and functions.
+__________________
+Before using the routines:
+* Add the folder containing the Matlab code to the Matlab path.
 
-* no empty spaces in path
-** each subfolder needs to have the string 'SIM' in its name.
+* Data needs to be organized in a folder** containing sub-folders** each with a raw acquisition
+
+	Example:
+
+	mSIM data #1: 'C:/ExptA/SIM_001/SIM_001.tif
+
+	mSIM data #2: 'C:/ExptA/SIM_002/SIM_002.tif
+	...
+
+	** no empty spaces in path
+	
+	*** each subfolder needs to have the string 'SIM' in its name.
+__________________
+
+Running the code:
 
 1. Run the imageJ macro: 
 The ImageJ macro uses the Thunderstorm plug-in [1] to generate .csv files with the positions of the illumination spots in each of the image of the mSIM movies: one file per acquisition, added to each subfolder.
