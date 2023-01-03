@@ -13,7 +13,7 @@ Before using the routines:
 
 * Add the folder containing the Matlab code to the Matlab path.
 
-* To run the Imagej macro data needs to be organized in a folder** containing sub-folders** each with a raw acquisition
+* To run the Imagej macro data needs to be organized in a folder** containing sub-folders*** each with a raw acquisition
 
 	Example:
 
