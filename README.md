@@ -30,14 +30,14 @@ __________________
 Running the code:
 
 1. Run the imageJ macro: 
-The ImageJ macro uses the Thunderstorm plug-in [3] to generate .csv files with the positions of the illumination spots in each of the image of the mSIM movies: one file per acquisition, added to each subfolder.
+The ImageJ macro uses the Thunderstorm plug-in [3] to generate .csv files with the approximate positions of the illumination spots in each of the image of the mSIM movies.
 
-2. Add the folder containing the Matlab code to the Matlab path.
+2. type: run recon_mSim_SingleImage.m in Matlab command window.
 
-3. type: run recon_mSim_SingleImage.m in Matlab command window
+The code will prompt to input acquisition and reconstruction parameters. Default values usually work, except the 'Threshold for dot identification in FFT' that we usually tune in the range 100 to 500 if the standard value does not work . Additional options allow for a deconvolution step, that requires to load an xy PSF of the mSIM microscope [enabled by default]. A destriping option, that requires to input a mask for the mSIM Fourier Transform is also available [disabled by default]. 
 
-
-
+The code will then prompt to load both the raw SIM stack and the .csv file and start to identify lattice vectors, offset vectors and reconstructing the mSIM image.
+Output images are saved as 16bit tiffs, normalized for the image maximum. 
 
 The Matlab code use bpass.m and pkfind.m from John C. Crocker and David G. Grier, 1997.  
 
