@@ -4,7 +4,7 @@ Reconstruct mSIM images from sequences of images (mSIM data, in multi-page TIFF 
 
 This code is composed by an FIJI/ImageJ macro and some Matlab scripts and functions.
 
-These routines are basically an implementation in Matlab of the code developed in Phython by Andrew G. York [1], with some minor differences on the identification of the lattice offset vectors and on the image rendering, that is instead akin to the approach developed by [2].
+These routines are basically an implementation in Matlab of the code developed in Python by Andrew G. York [1], with some minor differences on the identification of the lattice offset vectors and on the image rendering, that is instead akin to the approach developed by [2].
 
 __________________
 Before using the routines:
