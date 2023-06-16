@@ -51,7 +51,7 @@ NOTE: You can download some example mSIM raw acquisitions, together with the ass
 
 https://www.dropbox.com/s/siip8quf2c154ql/ExampleData_mSIM.zip?dl=1
 
-For these exemplary acquisitions Tubulin data provide successful reconstruction using a threshold equal to 500. DAPI data provide succesful reconstruction using a threshold equal to 200. 
+For these exemplary acquisitions Tubulin data provide successful reconstruction using a 'Threshold for dot identification in FFT' parameter equal to 500. DAPI data provide succesful reconstruction using a 'Threshold for dot identification in FFT' parameter equal to 200. 
 
 The code will output reconstructed widefield, confocal and mSIM images (+ deconvolution if selected). Reconstruction time for a mSIM image on the order of two minutes on an PC equipped with an Intel Xeon E5-1620 and 16GB of installed RAM.
 
