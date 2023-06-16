@@ -6,7 +6,7 @@ This code is composed by an FIJI/ImageJ macro and some Matlab scripts and functi
 
 These routines are basically an implementation in Matlab of the code developed in Python by Andrew G. York [1], with some minor differences on the identification of the lattice offset vectors and on the image rendering, that is instead akin to the approach developed by [2].
 
-The Matlab code has been tested on Matlab 2018b.
+The Matlab code has been tested on Matlab 2018b on Windows 7 and Windows 11 machines. 
 
 __________________
 Before using the routines:
@@ -50,6 +50,8 @@ The Matlab code use bpass.m and pkfind.m from John C. Crocker and David G. Grier
 NOTE: You can download some example mSIM raw movies, together with the associated thunderstorm .csv tables and PSFs (for deconvolution) at:
 
 https://www.dropbox.com/s/siip8quf2c154ql/ExampleData_mSIM.zip?dl=1
+
+The code will output reconstructed widefield, confocal and mSIM images (+ deconvolution if selected). Reconstruction time for a mSIM image on the order of two minutes on an PC equipped with an Intel Xeon E5-1620 and 16GB of installed RAM.
 
 
 
