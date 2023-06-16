@@ -6,6 +6,8 @@ This code is composed by an FIJI/ImageJ macro and some Matlab scripts and functi
 
 These routines are basically an implementation in Matlab of the code developed in Python by Andrew G. York [1], with some minor differences on the identification of the lattice offset vectors and on the image rendering, that is instead akin to the approach developed by [2].
 
+The Matlab code has been tested on Matlab 2018b.
+
 __________________
 Before using the routines:
 
