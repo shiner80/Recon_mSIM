@@ -25,6 +25,9 @@ Before using the routines:
 	** no empty spaces in path
 	
 	*** each subfolder needs to have the string 'SIM' in its name.
+	
+
+
 __________________
 
 Running the code:
@@ -40,6 +43,11 @@ The code will then prompt to load both the raw SIM stack and the .csv file and s
 Output images are saved as 16bit tiffs, normalized for the image maximum. 
 
 The Matlab code use bpass.m and pkfind.m from John C. Crocker and David G. Grier, 1997.  
+
+
+NOTE: You can download some example mSIM raw movies, together with the associated thunderstorm .csv tables and PSFs (for deconvolution) at:
+
+https://www.dropbox.com/s/siip8quf2c154ql/ExampleData_mSIM.zip?dl=1
 
 
 
