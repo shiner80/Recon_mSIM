@@ -39,7 +39,7 @@ The ImageJ macro uses the Thunderstorm plug-in [3] to generate .csv files with t
 
 2. type: run recon_mSim_SingleImage.m in Matlab command window.
 
-The code will prompt to input acquisition and reconstruction parameters. Default values usually work, except the 'Threshold for dot identification in FFT' that we usually tune in the range 100 to 500 if the standard value does not work . Additional options allow for a deconvolution step, that requires to load an xy PSF of the mSIM microscope [enabled by default]. A destriping option, that requires to input a mask for the mSIM Fourier Transform is also available [disabled by default]. 
+The code will prompt to input acquisition and reconstruction parameters. Default values usually work, except the 'Threshold for dot identification in FFT' - whose setting depends on the brightness of the detected spots in the image - in our hands typically in the range 100 to 500. Additional options allow for a deconvolution step, that requires to load an xy PSF of the mSIM microscope [enabled by default]. A destriping option, that requires to input a mask for the mSIM Fourier Transform is also available [disabled by default]. 
 
 The code will then prompt to load both the raw SIM stack and the .csv file and start to identify lattice vectors, offset vectors and reconstructing the mSIM image.
 Output images are saved as 16bit tiffs, normalized for the image maximum. 
@@ -47,9 +47,11 @@ Output images are saved as 16bit tiffs, normalized for the image maximum.
 The Matlab code use bpass.m and pkfind.m from John C. Crocker and David G. Grier, 1997.  
 
 
-NOTE: You can download some example mSIM raw movies, together with the associated thunderstorm .csv tables and PSFs (for deconvolution) at:
+NOTE: You can download some example mSIM raw acquisitions, together with the associated thunderstorm .csv tables and PSFs (for deconvolution) at:
 
 https://www.dropbox.com/s/siip8quf2c154ql/ExampleData_mSIM.zip?dl=1
+
+For these exemplary acquisitions Tubulin data provide successful reconstruction using a threshold equal to 500. DAPI data provide succesful reconstruction using a threshold equal to 200. 
 
 The code will output reconstructed widefield, confocal and mSIM images (+ deconvolution if selected). Reconstruction time for a mSIM image on the order of two minutes on an PC equipped with an Intel Xeon E5-1620 and 16GB of installed RAM.
 
